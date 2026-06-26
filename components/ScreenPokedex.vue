@@ -3,7 +3,7 @@
     <div class="pokedex-header">
       <button class="btn-back-light" @click="game.goToConfig()">← Retour</button>
       <div class="pokedex-title-block">
-        <h1 class="pokedex-title">Mes Pokémons</h1>
+        <h1 class="pokedex-title">Mes Pokémon</h1>
         <span class="pokedex-count">
           <strong>{{ game.caughtNumbers.length }}</strong> / 890 attrapés
         </span>
