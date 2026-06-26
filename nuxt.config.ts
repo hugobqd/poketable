@@ -19,5 +19,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+  vite: {
+    server: {
+      fs: { strict: false },
+    },
+  },
   compatibilityDate: "2024-09-09",
 })
