@@ -3,7 +3,7 @@
     <div class="pokedex-header">
       <button class="btn-back-light" @click="game.goToConfig()">← Retour</button>
       <div class="pokedex-title-block">
-        <h1 class="pokedex-title">Mes Pokémon</h1>
+        <h1 class="pokedex-title">Mes Pokémons</h1>
         <span class="pokedex-count">
           <strong>{{ game.caughtNumbers.length }}</strong> / 890 attrapés
         </span>
@@ -46,6 +46,7 @@
           @click="selected = selected?.number === pokemon.number ? null : pokemon"
         >
           <img
+            class="poke-sprite"
             :src="`/img/mini/${pokemon.number}.png`"
             :alt="isCaught(pokemon.number) ? pokemon.name : '?'"
             :class="{ silhouette: !isCaught(pokemon.number) }"

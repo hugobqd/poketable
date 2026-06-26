@@ -834,8 +834,8 @@ img { display: block; }
 
 .pokedex-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  gap: .5rem;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: .6rem;
   padding: 1rem;
 }
 
@@ -843,9 +843,9 @@ img { display: block; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .2rem;
-  padding: .5rem .25rem;
-  border-radius: 8px;
+  gap: .3rem;
+  padding: .75rem .5rem .6rem;
+  border-radius: 10px;
   background: rgba(255,255,255,.04);
   border: 1px solid rgba(255,255,255,.06);
   cursor: pointer;
@@ -859,9 +859,10 @@ img { display: block; }
 
 .poke-missing { opacity: .35; }
 
-.poke-card img {
-  width: 48px;
-  height: 48px;
+/* Image Pokémon dans la carte — plus grande */
+.poke-card .poke-sprite {
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -873,7 +874,7 @@ img { display: block; }
 }
 
 .poke-name {
-  font-size: .7rem;
+  font-size: .75rem;
   font-weight: 600;
   color: rgba(255,255,255,.9);
   white-space: nowrap;
@@ -884,13 +885,14 @@ img { display: block; }
 
 .poke-types {
   display: flex;
-  gap: 2px;
+  gap: 3px;
   justify-content: center;
 }
 
-.type-badge-sm {
-  width: 18px;
-  height: 18px;
+/* Badges de type — petits, spécificité correcte */
+.poke-card .type-badge-sm {
+  width: 20px;
+  height: 20px;
   object-fit: contain;
 }
 
