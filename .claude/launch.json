@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "poketable-nuxt",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["nuxt", "dev", "--port", "3456"],
+      "port": 3456
+    }
+  ]
+}
